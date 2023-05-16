@@ -13,8 +13,8 @@ const convertValues = async () => {
 	const dolar = data.USDBRL.high;
 	const euro = data.EURBRL.high;
 	const bitcoin = data.BTCBRL.high;
-	const dolarCanada = data.CADBRL.high;
-	const peso = data.MNXBRL.high;
+	//const dolarCanada = data.CADBRL.high;
+	//const peso = data.MNXBRL.high;
 
 	realValue.innerHTML = new Intl.NumberFormat("pt-BR", {
 		style: "currency",

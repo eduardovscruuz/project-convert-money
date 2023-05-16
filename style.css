@@ -1,97 +1,222 @@
 * {
-	font-family: "Roboto", sans-serif;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	line-height: 18px;
-	font-style: normal;
-	font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: normal;
 }
 
 body {
-	background-color: #e5e5e5;
+  background-color: #e5e5e5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/background.jpg);
+  backdrop-filter: blur(4px);
 }
 
 .container {
-	width: 375px;
-	background-color: #f4f4f4;
-	margin: 0 auto;
-	margin-top: 100px;
+  width: 975px;
+  height: 70vh;
+  display: flex;
+}
+
+.select-menu {
+  width: 60%;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
-	background-color: #1b83e2;
-	height: 65px;
+  background-color: #1b83e2;
+  width: 100%;
+  height: 12%;
 }
 
 h1 {
-	color: #f4f4f4;
-	font-size: 24px;
-	text-align: center;
-	padding-top: 25px;
+  color: #f4f4f4;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 28px;
+  text-transform: uppercase;
+  font-weight: bolder;
+
+  letter-spacing: 3px;
 }
 
-main {
-	padding: 25px;
+.info {
+  padding: 35px;
+  width: 100%;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 label {
-	font-size: 14px;
-	color: #777777;
+  color: #777777;
+  width: 100%;
+  font-size: 17px;
 }
 
 select {
-	background-color: #ffffff;
-	border-radius: 4px;
-	height: 48px;
-	display: block;
-	width: 100%;
-	cursor: pointer;
-	outline: none;
-	appearance: none;
-	padding: 16px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  height: 66px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  border: none;
+  padding: 16px;
+  margin-top: 8px;
+  font-size: 17px;
 }
 
 input {
-	background-color: #ffffff;
-	border-radius: 4px;
-	height: 48px;
-	display: block;
-	width: 100%;
-	outline: none;
-	appearance: none;
-	padding: 16px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  height: 66px;
+  display: block;
+  width: 100%;
+  outline: none;
+  appearance: none;
+  border: none;
+  padding: 16px;
+  font-size: 17px;
+  margin-top: 8px;
 }
 
 button {
-	background-color: #1b83e2;
-	border-radius: 25px;
-	height: 48px;
+  background-color: #1b83e2;
+  border-radius: 25px;
+  height: 66px;
 
-	font-size: 16px;
-	font-weight: bold;
-	width: 100%;
-	cursor: pointer;
-	color: #f4f4f4;
-	border: none;
-	margin-top: 24px;
-	margin-bottom: 36px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  color: #f4f4f4;
+  border: none;
+  margin-top: 24px;
 }
 
-section {
-	border: 2px solid #1b83e2;
-	border-radius: 6px;
-	text-align: center;
+.convert-result {
+  width: 40%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 0;
 }
 
 .brazil,
 .usa {
-	text-align: center;
-	padding: 10px;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
 }
 
 .coin {
-	color: #1b83e2;
-	font-size: 20px;
-	font-weight: bold;
+  color: #1b83e2;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.arrow {
+  width: 100px;
+  transform: rotate(180deg);
+}
+
+.flag {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 85vw;
+    height: 90vh;
+    flex-direction: column;
+  }
+
+  .select-menu {
+    width: 100%;
+    height: 55%;
+  }
+
+  header {
+    background-color: #1b83e2;
+    width: 100%;
+    height: 15%;
+  }
+
+  h1 {
+    color: #f4f4f4;
+    font-size: 1.3em;
+    text-align: center;
+    padding-top: 24px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+  }
+
+  .info {
+    padding: 25px;
+    height: 85%;
+  }
+
+  label {
+    font-size: 15px;
+  }
+
+  select {
+    height: 36px;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  input {
+    height: 36px;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  button {
+    height: 46px;
+  }
+
+  .convert-result {
+    width: 100%;
+    height: 45%;
+    padding: 15px 0;
+  }
+
+  .brazil,
+  .usa {
+    padding: 5px;
+    font-size: 1.1em;
+  }
+
+  .coin {
+    font-size: 1.2em;
+    margin-top: 5px;
+  }
+  .arrow {
+    width: 15%;
+  }
+
+  .flag {
+    width: 50px;
+    margin-bottom: 8px;
+  }
 }

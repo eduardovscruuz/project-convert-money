@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<title>Convert Money</title>
-	</head>
 
-	<body>
-		<div class="container">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet" />
+	<title>Convert Money</title>
+</head>
+
+<body>
+
+	<section class="container">
+
+		<div class="select-menu">
 			<header>
 				<h1>Convert Money</h1>
 			</header>
 
-			<main>
+			<div class="info">
 				<label>
 					Converter de
 					<select>
@@ -39,33 +40,34 @@
 
 				<label>
 					Valor
-					<input
-						type="text"
-						id="input-real"
-						placeholder="R$10.000,00"
-					/>
+					<input type="text" id="input-real" placeholder="R$10.000,00" />
 				</label>
 
 				<button type="button">Converter</button>
-
-				<section>
-					<div class="brazil">
-						<img src="assets/brazil.png" alt="brazil" />
-						<p>Real Brasileiro</p>
-						<p class="coin" id="real-value">R$ 10.000,00</p>
-					</div>
-
-					<img src="assets/arrow.png" alt="" />
-
-					<div class="usa">
-						<img id="currency-img" src="assets/usa.png" alt="usa" />
-						<p id="currency-name">Dólar Americano</p>
-						<p class="coin" id="currency-value">US$ 2.000,00</p>
-					</div>
-				</section>
-			</main>
+			</div>
+				
 		</div>
 
-		<script src="script.js"></script>
-	</body>
+		<div class="convert-result">
+			
+			<div class="brazil">
+				<img class="flag" src="assets/brazil.png" alt="brazil" />
+				<p>Real Brasileiro</p>
+				<p class="coin" id="real-value">R$ 10.000,00</p>
+			</div>
+
+			<img class="arrow" src="assets/arrow.png" alt="" />
+
+			<div class="usa">
+				<img class="flag" id="currency-img" src="assets/usa.png" alt="usa" />
+				<p id="currency-name">Dólar Americano</p>
+				<p class="coin" id="currency-value">US$ 2.000,00</p>
+			</div>
+		</div>
+
+	</section>
+
+	<script src="script.js"></script>
+</body>
+
 </html>
