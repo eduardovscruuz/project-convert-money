@@ -22,6 +22,7 @@ body {
   width: 975px;
   height: 70vh;
   display: flex;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
 }
 
 .select-menu {
@@ -33,7 +34,7 @@ body {
 }
 
 header {
-  background-color: #1b83e2;
+  background-color: #12ac40;
   width: 100%;
   height: 12%;
 }
@@ -95,7 +96,7 @@ input {
 }
 
 button {
-  background-color: #1b83e2;
+  background-color: #12ac40;
   border-radius: 25px;
   height: 66px;
 
@@ -110,7 +111,7 @@ button {
 }
 
 button:hover {
-  background-color: #1264cf;
+  background-color: #009b2e;
   transform: translateY(-4%);
 }
 
@@ -133,7 +134,7 @@ button:hover {
 }
 
 .coin {
-  color: #1b83e2;
+  color: #12ac40;
   font-weight: bold;
   font-size: 30px;
   margin-top: 10px;
@@ -161,7 +162,7 @@ button:hover {
   }
 
   header {
-    background-color: #1b83e2;
+    background-color: #12ac40;
     width: 100%;
     height: 15%;
   }

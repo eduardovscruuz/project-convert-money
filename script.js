@@ -57,23 +57,23 @@ const currencyChange = () => {
 	const currencyImg = document.getElementById("currency-img");
 
 	if (select.value === "US$ Dólar Americano") {
-		currencyImg.src = "assets/usa.png";
+		currencyImg.src = "./assets/usa.png";
 		currencyName.innerHTML = "US$ Dólar Americano";
 	}
 	if (select.value === "€ Euro") {
-		currencyImg.src = "assets/euro.png";
+		currencyImg.src = "./assets/euro.png";
 		currencyName.innerHTML = "€ Euro";
 	}
 	if (select.value === "BTC Bitcoin") {
-		currencyImg.src = "assets/bitcoin.png";
+		currencyImg.src = "./assets/bitcoin.png";
 		currencyName.innerHTML = "BTC Bitcoin";
 	}
 	if (select.value === "C$ Dólar Canadense") {
-		currencyImg.src = "assets/canada.png";
+		currencyImg.src = "./assets/canada.png";
 		currencyName.innerHTML = "C$ Dólar Canadense";
 	}
 	if (select.value === "MEX$ Peso Mexicano") {
-		currencyImg.src = "assets/mexico.png";
+		currencyImg.src = "./assets/mexico.png";
 		currencyName.innerHTML = "MEX$ Peso Mexicano";
 	}
 
