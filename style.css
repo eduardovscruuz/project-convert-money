@@ -106,6 +106,12 @@ button {
   color: #f4f4f4;
   border: none;
   margin-top: 24px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #1264cf;
+  transform: translateY(-4%);
 }
 
 .convert-result {
